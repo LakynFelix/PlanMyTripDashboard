@@ -1,0 +1,18 @@
+body {
+/*background-image: ;*/
+background-color: cadetblue;
+text-align: center;
+
+}
+#main-container{
+color: black;
+}
+
+#forecast-container {
+background-color: chocolate;
+color: darkgreen;
+}
+
+#daily-container{
+background-color: darkorchid;
+}
