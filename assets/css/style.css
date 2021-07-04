@@ -1,30 +1,69 @@
 header{
 font-weight: bolder;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+padding:20px;
+border-radius: 20px;
 }
 
 body {
 background-color:indigo;
 font-weight:bolder;
-
 text-align: center;
-
 }
 
+input{
+    background-color: teal;
+    font-weight: bolder;
+    color: black;
+    
+    
+}
+label {
+    font-size: 20px;
+    
+}
+
+h2 {
+    color:blue;
+    font-weight: bolder;
+    font-style: italic;
+}
 button {
     background-color:black;
     border-radius: 13px;
-    color: white;
+    
+    padding: 8px;
+    color: teal;
 }
 #main-container{
 color: black;
+padding-bottom: 20px;
 }
 
 #forecast-container {
+ width: 800px;
+margin-left: 530px;
+ height: 300px;
+    border-radius: 13px;
+    font-size: 21px;
+    font-style: italic;
 background-color: chocolate;
-color: darkgreen;
+color: black;
 }
 
 #daily-container{
+    width: 1000px;
+    height: 300px;
+    margin-left: 435px;
 background-color: darkorchid;
+border-radius: 13px;
+
+
+}
+
+#row {
+    flex-direction: column;
+    background-color: black;
+
 }

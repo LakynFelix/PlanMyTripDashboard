@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css" />
+    
     <title>Weather Dashboard </title>
 </head>
 <body>
@@ -15,14 +16,13 @@
       
         <div id="column-left" class="col-12 col-md-3 col-lg-2"></div>
        <form id="user-city" class="card-body">
-           <label class="search-city" fo ="city"> City  </label>
+           <label class="search-city" for="city"> Search City  </label>
            <input name ="city" id="city" type="text" class="form-city"/>
-           <button type="search" class="btn">Search City</button>
+           <button type="search" class="btn">Search</button>
        </form>
-<p> dskjfskdj</p>
 
         <div id="forecast-container" class="col-12 col-md-9 col-lg-10">
-            <h3 id="city-name" class="city-name"> City Name :<span id="search"></span></h3>
+            <h3 id="city-name" class="city-name"> City <span id="search"></span></h3>
             <img id="current-pic" >
             <p id="temperature"></p>
              <p id="wind-speed"></p>
@@ -31,24 +31,27 @@
         </div>
 
         </div>
+        <div class="row d-none" id="fivedays">
+        
         <div id="daily-container" class="col-12 col-md-9 col-lg-10">
-            <h2>5 - Day Forecast</h2>
+            <h2>5  Day Forecast</h2>
         
             <div class="row">
-                <div class="row-md-2 ">
-                    1232 
+                <div class="col-md-2 forecast bg-primary text-black m-2 rounded">
+                   
                 </div>
-                <div class="row-md-2 ">
-                    1232 
+                <div class="col-md-2 forecast bg-primary text-blak m-2 rounded ">
+                   
                 </div>
-                <div class="col-md-2">
-                    1232 
+                <div class="col-md-2 forecast bg-primary text-black m-2 rounded">
+                 
                 </div>
-                <div class="col-md-2">
-                    1232 
+                <div class="col-md-2 forecast bg-primary text-black m-2 rounded">
+                   
                 </div>
-                <div class="col-md-2">
-                    1232 
+                <div class="col-md-2 forecast bg-primary text-black m-2 rounded">
+                   
+                </div>
                 </div>
             </div>
         </div>
