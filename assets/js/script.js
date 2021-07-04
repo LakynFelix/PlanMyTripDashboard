@@ -24,12 +24,8 @@ var formSubmitHandler = function(event) {
   
     repocContainerEl.textContent = "";
     nameInputEl.value = "";
-  } else {
-    alert("Please enter a valid city");
-  }
-  };
 
-  
+  };
 
 var getCity = function(city) {
     var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + APIKey;
@@ -43,9 +39,7 @@ var getCity = function(city) {
           });
        
   };
-      }
-    ,
-
+}
       // Daily forcast//
       const currentDate = new Date(response.data.dt * 1000);
       const day = currentDate.getDate();
@@ -54,19 +48,8 @@ var getCity = function(city) {
       nameEl.innerHTML = response.data.name + " (" + month + "/" + day + "/" + year + ") ";
 
  // Get 5 day forecast  //
- const forecastEls = document.querySelectorAll(".forecast");
- for (i = 0; i < forecastEls.length; i++) {
-     forecastEls[i].innerHTML = "";
-     const forecastIndex = i * 8 + 4;
-     const forecastDate = new Date(response.data.list[forecastIndex].dt * 1000);
-     const forecastDay = forecastDate.getDate();
-     const forecastMonth = forecastDate.getMonth() + 1;
-     const forecastYear = forecastDate.getFullYear();
-     const forecastDateEl = document.createElement("p");
-     forecastDateEl.setAttribute("class", "mt-3 mb-0 forecast-date");
-     forecastDateEl.innerHTML = forecastMonth + "/" + forecastDay + "/" + forecastYear;
-     forecastEls[i].append(forecastDateEl);
-
+ 
+ }
   // Get history from local storage //
 
   searchEl.addEventListener("click", function () {
