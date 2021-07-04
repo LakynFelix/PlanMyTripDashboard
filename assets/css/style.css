@@ -1,5 +1,10 @@
+#header{
+    background:url("/assets/images/DSC_0065.png;");
+}
+
 body {
-    background:url("/assets/images/422613_10151287926565181_1369730289_n.jpg");
+background-image:url("/assets/images/DSC_0065.png;");
+    
 text-align: center;
 
 }
