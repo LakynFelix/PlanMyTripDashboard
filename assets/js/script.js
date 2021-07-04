@@ -6,9 +6,9 @@ const currentTempEl = document.getElementById("temp");
 const currentHumidityEl = document.getElementById("humidity");
 const currentmntWindEl = document.getElementById("wind-speed");
 const currentUVEl = document.getElementById("UV-index");
-var cityContainerEl = document.querySelector("#repos-container");
-var SearchTerm = document.querySelector("#repo-search-term");
-
+var cityContainerEl = document.querySelector("#forcast-container");
+var SearchTerm = document.querySelector("#search");
+var cuttentDate 
 const APIKey = "84b79da5e5d7c92085660485702f4ce8";
 
 
@@ -25,7 +25,7 @@ var formSubmitHandler = function(event) {
     repocContainerEl.textContent = "";
     nameInputEl.value = "";
   } else {
-    alert("Please enter a GitHub username");
+    alert("Please enter a valid city");
   }
   };
 
@@ -45,9 +45,15 @@ var getCity = function(city) {
           });
        
   };
-}
+
 
  // Get 5 day forecast  //
 
   // Get history from local storage //
-
+  searchEl.addEventListener("click", function () {
+    const searchTerm = cityEl.value;
+    getWeather(searchTerm);
+    searchHistory.push(searchTerm);
+    localStorage.setItem("search", JSON.stringify(searchHistory));
+    renderSearchHistory();
+})
